@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Course Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadStudents()">
+
+<h2>Search Student</h2>
+<input type="text" id="searchInput" placeholder="Search by name">
+<button onclick="searchStudents()">Search</button>
+<button onclick="loadStudents()">Reset</button>
+
+<hr>
+
+<h2>Add Student</h2>
+<input type="text" id="name" placeholder="Name">
+<input type="email" id="email" placeholder="Email">
+
+<select id="course">
+  <option value="1">Java Full Stack</option>
+  <option value="2">Python Full Stack</option>
+</select>
+
+<button onclick="addStudent()">Add Student</button>
+
+<hr>
+
+<h2>Students List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Course</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="studentsTable"></tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
