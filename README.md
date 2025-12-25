@@ -1,3 +1,6 @@
+# backend-task
+Spring Boot backend for student and course management
+
 # Student and Course Management Backend
 
 ## 📌 Project Overview
